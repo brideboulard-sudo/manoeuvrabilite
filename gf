@@ -26,7 +26,7 @@ show_status() {
     echo "Project: manoeuvrabilite"
     echo "Status: Active"
     echo "Files:"
-    ls -lh
+    ls -lh 2>/dev/null || echo "No files to display"
 }
 
 show_info() {
